@@ -49,12 +49,10 @@ User.save((err) => {
        })
 
        //Creating Many Records 
-const ListOfUser = () => {
+
   Person.create(users)
      .then(console.log('Users are added successfully'))
      .catch((err) => console.log('error'))
- }
- ListOfUser()
 
  //Searching Database
  Person.find({ name: 'rihem'}, function (err, res) {
